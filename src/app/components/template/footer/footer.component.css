@@ -1,0 +1,7 @@
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 0px;
+}
+

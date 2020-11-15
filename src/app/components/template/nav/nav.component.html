@@ -1,0 +1,34 @@
+<mat-sidenav-container class='container'>
+    <mat-sidenav class="sidenav" mode='side' opened fixedInViewport='true' fixedTopGap=64>
+        <mat-nav-list class="nav-list">
+            <a class="mat-list-item" routerLink="/">
+                <i class="material-icons v-middle">
+                    home
+                </i>
+                Início
+            </a>
+            <a class="mat-list-item" routerLink="/products">
+                <i class="material-icons v-middle">
+                    done_all
+                </i>
+                Concluídas
+            </a>
+            <a class="mat-list-item" routerLink="/products/create">
+                <i class="material-icons v-middle">
+                    add_task
+                </i>
+                Nova tarefa
+            </a>
+            <a class="mat-list-item" routerLink="/delete">
+                <i class="material-icons v-middle">
+                    delete_outline
+                </i>
+                Apagar tarefa
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
