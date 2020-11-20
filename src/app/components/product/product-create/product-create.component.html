@@ -1,14 +1,24 @@
 <mat-card>
+    <mat-card-title>titulo aqui</mat-card-title>
 
-    <mat-card-title>titulo</mat-card-title>
-    <button (click)="createProduct()" color="primary">
+    <form>
+        <mat-form-field>
+            <mat-label>Nome do miserávi</mat-label>
+            <input matInput placeholder="escreve aqui em baixo" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Número aí qualquer</mat-label>
+            <input matInput placeholder="entendeu que é para escrever aqui em baixo?" [(ngModel)]="product.price" name="price">
+        </mat-form-field>
+    </form>
+
+    <button mat-raised-button color="primary" (click)="createProduct()">
         Salvar
     </button>
 
-    <button (click)="cancel()">
+    <button mat-stroked-button (click)="cancel()">
         Cancelar
     </button>
 
-
 </mat-card>
-
