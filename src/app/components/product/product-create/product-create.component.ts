@@ -26,11 +26,11 @@ export class ProductCreateComponent implements OnInit {
   createProduct(): void {
     this.productService.create(this.product).subscribe(( )=> {
       console.table({'product name cadastrado': this.product['name']})
-      this.router.navigate(['/products'])
+      this.router.navigate(['/'])
     })
   }
 
   cancel(): void {
-    this.router.navigate(['/products'])
+    this.router.navigate(['/'])
   }
 }

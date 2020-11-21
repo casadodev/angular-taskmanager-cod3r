@@ -17,7 +17,6 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { HomeComponent } from './views/home/home.component';
-import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { BlueDirective } from './directives/blue.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
@@ -26,6 +25,8 @@ import { ProductRead2Component } from './components/product/product-read2/produc
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatButtonModule } from '@angular/material/button';
+import { ProductDoneComponent } from './components/product/product-done/product-done.component';
 
 @NgModule({
   declarations: [
@@ -34,12 +35,12 @@ import { MatSortModule } from '@angular/material/sort';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProductCrudComponent,
     ProductCreateComponent,
     BlueDirective,
     ForDirective,
     ProductListComponent,
-    ProductRead2Component
+    ProductRead2Component,
+    ProductDoneComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +56,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
